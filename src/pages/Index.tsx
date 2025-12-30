@@ -1,13 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Layout } from "@/components/layout/Layout";
+import { Hero } from "@/components/home/Hero";
+import { WhoWeHelp } from "@/components/home/WhoWeHelp";
+import { WhyGenericFails } from "@/components/home/WhyGenericFails";
+import { OurApproach } from "@/components/home/OurApproach";
+import { LendingSolutions } from "@/components/home/LendingSolutions";
+import { Credentials } from "@/components/home/Credentials";
+import { Process } from "@/components/home/Process";
+import { FinalCTA } from "@/components/home/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <Hero />
+      <WhoWeHelp />
+      <WhyGenericFails />
+      <OurApproach />
+      <LendingSolutions />
+      <Credentials />
+      <Process />
+      <FinalCTA />
+    </Layout>
   );
 };
 
